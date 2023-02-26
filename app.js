@@ -7,7 +7,9 @@ function computerPlay() {
 
 //player choice function
 
-
+function playerPlay() {
+    return prompt("Chose your move: rock, paper or scissors").toLocaleLowerCase();
+}
 
 //play round function
 
