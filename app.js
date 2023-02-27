@@ -2,7 +2,7 @@
 
 function computerPlay() {
     let choice = ["rock", "paper", "scissors"];
-    return choice[Math.floor(math.random() * 3)];
+    return choice[Math.floor(Math.random() * 3)];
 }
 
 //player choice function
@@ -24,8 +24,18 @@ function playRound(playerChoice, computerChoice) {
     ) {
         return "you win";
     } else {
-        return "you lose"
+        return "you lose";
     }
 }
 
 //start game function
+
+function game() {
+    for(let i=0; i<5; i++) {
+        let playerChoice = playerPlay();
+        let computerChoice = computerPlay();
+        console.log(playRound(playerChoice, computerChoice));
+    }
+}
+
+game();
